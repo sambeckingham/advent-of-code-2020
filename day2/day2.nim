@@ -5,7 +5,7 @@ import strutils
 var validCount: int
 var validPosition: int
 
-for line in lines("input/day2.txt"):
+for line in lines("input.txt"):
     var lowerBound: int
     var upperBound: int
     var character: string

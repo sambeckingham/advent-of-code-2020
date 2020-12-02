@@ -14,7 +14,7 @@ import strformat
 
 var entries = newSeq[int]()
 
-for line in lines("input/day1.txt"):
+for line in lines("input.txt"):
     entries.add(parseInt(line))
 
 # Part 1
@@ -24,7 +24,6 @@ for i, x in entries:
             echo &"Part 1: {x * y}"             
 
 # Part 2
-# lol for loops go brrrrrrrrrr
 for i, x in entries:
     for j, y in entries[i+1 .. ^1]:
         for z in entries[i+j+1 .. ^1]:

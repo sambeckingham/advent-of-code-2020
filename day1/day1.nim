@@ -3,7 +3,7 @@ import strformat
 
 var entries = newSeq[int]()
 
-for line in lines("input/day1.txt"):
+for line in lines("input.txt"):
     entries.add(parseInt(line))
 
 # Part 1
