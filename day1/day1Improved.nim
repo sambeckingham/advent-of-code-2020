@@ -9,9 +9,7 @@ day1Improved.nim:
 Shaves off an average of 0.8ms in the input data.
 ]#
 
-import strutils
-import strformat
-
+import strformat, strutils
 var entries = newSeq[int]()
 
 for line in lines("input.txt"):
@@ -21,7 +19,7 @@ for line in lines("input.txt"):
 for i, x in entries:
     for y in entries[i+1 .. ^1]:
         if x + y == 2020:
-            echo &"Part 1: {x * y}"             
+            echo &"Part 1: {x * y}"
 
 # Part 2
 for i, x in entries:

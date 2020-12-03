@@ -6,10 +6,10 @@ for line in lines("input.txt"):
     var row = newSeq[bool]()
     for symbol in line:
         if symbol == '.': row.add(false) else: row.add(true)
-    
+
     grid.add(row)
 
-iterator traverseVertical(grid: seq[seq[bool]], y:int): seq[bool] =
+iterator traverseVertical(grid: seq[seq[bool]], y: int): seq[bool] =
     let maxY = grid.len - 1
     var currentY = 0
     while currentY < maxY:

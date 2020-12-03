@@ -1,5 +1,4 @@
-import strutils
-import strformat
+import strformat, strutils
 
 var entries = newSeq[int]()
 
