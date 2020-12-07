@@ -1,14 +1,14 @@
 import sequtils, tables
 
 # Part 1
-var 
+var
   characterSet: seq[char]
   total: int
 for line in lines "input.txt":
   if line == "":
     inc(total, len deduplicate characterSet)
     characterSet = @[]
-  
+
   for c in line:
     characterSet.add(c)
 
@@ -18,7 +18,7 @@ characterSet = @[]
 echo "Part 1: ", total
 
 # Part 2
-var 
+var
   characterTable: CountTable[char]
   groupSize: int
   rotal: int
