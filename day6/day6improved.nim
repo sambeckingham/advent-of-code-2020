@@ -30,4 +30,3 @@ block:
 
 echo "Part 1: ", uniqueAnswerTotal
 echo "Part 2: ", allAnswerTotal
-
