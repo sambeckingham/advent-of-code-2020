@@ -8,9 +8,10 @@ var
     children: CountTable[string]
 let bagParser = peg bags:
     bags <- parentBag * " contain " * +childBag
-    parentBag <- >colour * Space * "bags": parent = $1
-    childBag <- >count * Space * >colour * Space * ("bags" | "bag") * (", " |
-            "."): children.inc($2, parseInt($1))
+    parentBag <- >colour * Space * "bags":
+        parent = $1
+    childBag <- >count * Space * >colour * Space * ("bags" | "bag") * (", " | "."):
+        children.inc($2, parseInt($1))
     colour <- +Alpha * Space * +Alpha
     count <- +Digit
 
