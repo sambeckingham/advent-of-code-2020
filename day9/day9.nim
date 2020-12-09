@@ -12,7 +12,7 @@ for n in numbers:
     if preamble.len < 25:
         preamble.add(nextNumber)
         continue
-    
+
     var sumFound: bool
     for number in preamble:
         if preamble.contains(nextNumber-number):
@@ -37,4 +37,3 @@ for i, n in numbers:
         elif total == noSumNumber and j > 0:
             var contiguousRange = numbers[i .. i+j+1]
             echo "Part 2: ", min(contiguousRange) + max(contiguousRange)
-    
