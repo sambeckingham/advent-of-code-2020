@@ -20,8 +20,8 @@ optionsTable[0] = 1
 
 for jolt in joltages[1 .. ^1]:
   optionsTable[jolt] = 0
-  for x in 1..3:
-    if optionsTable.contains(jolt-x):
-      optionsTable[jolt] = optionsTable[jolt] + optionsTable[jolt-x]
+  for ⚡ in 1..3:
+    if optionsTable.contains(jolt-⚡):
+      optionsTable[jolt] = optionsTable[jolt] + optionsTable[jolt-⚡]
 
 echo "Part 2: ", optionsTable[max(joltages)]
